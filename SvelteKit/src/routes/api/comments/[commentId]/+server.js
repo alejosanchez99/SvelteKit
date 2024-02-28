@@ -21,7 +21,7 @@ export async function PATCH(requestEvent) {
 }
 
 export async function DELETE(requestEvent) {
-    const { params, request } = requestEvent;
+    const { params } = requestEvent;
     const { commentId } = params;
     const deletedComment = findComment(commentId);
     removeComent(commentId);
